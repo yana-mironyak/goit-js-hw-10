@@ -4,8 +4,8 @@ var t=arguments[3],e="Expected a function",n=NaN,r="[object Symbol]",i=/^\s+|\s+
 },{}],"krre":[function(require,module,exports) {
 
 },{}],"irxn":[function(require,module,exports) {
-"use strict";function e(e){return fetch("https://restcountries.com/v2/{name}?fields=name.official,capital,population,flag.svg,languages").then(e=>{console.log(e.json())})}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=e;
+"use strict";function e(e){return fetch(`'https://restcountries.com/v3.1/${e}?fields=name.official,capital,population,flag.svg,languages'`).then(e=>e.json()).then(e=>{console.log(e)})}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=e;
 },{}],"Focm":[function(require,module,exports) {
 "use strict";var e=r(require("lodash.debounce"));require("./css/styles.css");var t=r(require("./js/fetchCountries"));function r(e){return e&&e.__esModule?e:{default:e}}const s=300,u=document.querySelector("#search-box");function n(e){const r=e.target.value;console.log(r),(0,t.default)(r)}u.addEventListener("input",(0,e.default)(n,300));
 },{"lodash.debounce":"PZFh","./css/styles.css":"krre","./js/fetchCountries":"irxn"}]},{},["Focm"], null)
-//# sourceMappingURL=/parcel-project-template/src.e992e471.js.map
+//# sourceMappingURL=/parcel-project-template/src.b70cf0cb.js.map
